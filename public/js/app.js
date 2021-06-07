@@ -35,7 +35,7 @@ weatherForm.addEventListener('submit',(e) => {
   
     
     
-    fetch('gi/weather?address='+ location).then((response) =>{
+    fetch('/weather?address='+ location).then((response) =>{
 
    response.json().then((data) => {
     if(data.error){
